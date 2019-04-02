@@ -12,12 +12,10 @@ df=url %>% read_html() %>% html_node(xpath = '//*[@id="mw-content-text"]/div/tab
 
 View(df)
 
-#reamoving empty rows from df
+#reamoving empty row from df
 
 df=df[2:152,]
 
-write.csv(df,file="data.csv")
+write.csv(df,file="country.csv")
 
-pc_wealth = as.numeric(df$`Wealth per capita`)
-gini = as.numeric(df$`Wealth Gini`)
 
