@@ -12,7 +12,7 @@ df=url %>% read_html() %>% html_node(xpath = '//*[@id="mw-content-text"]/div/tab
 
 View(df)
 
-#reamoving empty row from df
+#reamoving empty rows from df
 
 df=df[2:152,]
 
